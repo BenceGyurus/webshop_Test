@@ -58,12 +58,12 @@ class token_Setings{
 }
 
 class login{
-    static token = "";
+    /*static token = "";
     static send_Data = {};
     static users = {};
     static req;
     static res;
-    static ip;
+    static ip;*/
     static random_Token(){
         let chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'.split('');
         let length = 100;
@@ -110,13 +110,13 @@ class login{
 }
 
 class method{
-    static req;
+    /*static req;
     static res;
     static file;
     static extension;
     static status;
     static ip;
-    static url;
+    static url;*/
     static add_Method(req, res){
         this.req = req;this.res = res;
         this.url = req.url;
