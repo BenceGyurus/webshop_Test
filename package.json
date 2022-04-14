@@ -1,3 +1,23 @@
-{"scripts": {
-    "start": "node server.js"}
+{
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "webshop",
+  "version": "1.0.0",
+  "main": "encryption.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenceGyurus/webshop_Test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BenceGyurus/webshop_Test/issues"
+  },
+  "homepage": "https://github.com/BenceGyurus/webshop_Test#readme",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.17.3"
+  }
 }

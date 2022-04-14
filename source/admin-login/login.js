@@ -39,7 +39,7 @@ function send_This(){
         window.send = true;
     }
     if (window.send){
-        let json = JSON.stringify ({
+        let json = JSON.stringify({
             mail: datas[0],
             password: datas[1]
         });
@@ -58,11 +58,13 @@ function send_This(){
                         }
                     }
                     req.open("POST", "/admin-login-cookie");
+                    req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
                     req.send(JSON.stringify({token: datas.token}));
             }
             }
         }
         req.open("POST", "/adminlogin");
+        req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
         req.send(json);
     }
     else{
