@@ -69,7 +69,7 @@ function parse_Body(data){
     return JSON.parse(data)
 }
 
-app.use(bodyParser.urlencoded({extended: false}))
+/*app.use(bodyParser.urlencoded({extended: false}))
 
 app.post("/adminlogin",(req, res) =>{
     file_Data = open_File("admin.json");
@@ -98,7 +98,7 @@ app.post('/post-test', (req, res) => {
 
 app.get("/admin-login", (req, res)=>{
     res.sendFile(`${__dirname}/source/admin-login/login.html`);
-});*/
+});
 
 app.get("/products/:id", (req, res)=>{
     let is_There = false;
@@ -130,7 +130,12 @@ app.use((req, res, next) =>{
         }
     }
     next();
+})*/
+
+app.get("/", (req, res)=>{
+    res.sendFile(`${__dirname}/source/index.html`);
 })
+
 
 app.listen(server_Settings()[1], () => {})
 
